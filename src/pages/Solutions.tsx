@@ -1,61 +1,78 @@
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Card } from "@/components/ui/card";
-import { CheckCircle2, Calendar, Users, Shield, Sparkles, Heart } from "lucide-react";
+import { CheckCircle2, Calendar, Users, Shield, Sparkles, Heart, Brain } from "lucide-react";
 
 const solutions = [
   {
     icon: Calendar,
-    title: "Establish Boundaries & Rhythms",
-    description: "Create sustainable engagement patterns",
+    title: "Regulate Information Exposure",
+    description: "Control the chronic stress of 24/7 news cycles",
     recommendations: [
-      "Set specific times for political news consumption instead of constant scrolling",
-      "Implement 'news-free' hours or days to allow mental recovery",
-      "Use app timers and notification controls to manage information intake",
-      "Practice the 'one action per day' rule: choose one meaningful political action daily rather than attempting everything",
+      "Read news rather than watching it—reading gives you more control over what you're ingesting without manipulative imagery",
+      "Set specific times for political news consumption and use app timers to enforce limits",
+      "Tune in strategically when there's something actionable (finding where to vote, how to contribute)",
+      "Implement 'news-free' hours or days, especially before bed and first thing in the morning",
+      "Remember that social media platforms are designed to keep you engaged and push your buttons—it takes extra effort to limit chronic exposure",
     ],
   },
   {
     icon: Users,
-    title: "Build Community Support Systems",
-    description: "Collective care strengthens individual resilience",
+    title: "Foster Positive Social Connections",
+    description: "Build bonding ties that protect mental health",
     recommendations: [
-      "Form or join local civic groups that explicitly incorporate wellness practices",
-      "Create accountability partnerships where people check in on each other's well-being",
-      "Organize community events that combine activism with joy (art builds, community meals, etc.)",
-      "Establish shared resources like childcare swaps or meal trains for activists",
-    ],
-  },
-  {
-    icon: Shield,
-    title: "Develop Emotional Resilience Practices",
-    description: "Tools for processing political stress",
-    recommendations: [
-      "Integrate mindfulness or meditation specifically focused on political emotions",
-      "Keep a 'political feelings journal' to process complex emotions",
-      "Seek therapy or counseling that addresses political stress explicitly",
-      "Practice cognitive reframing techniques for news-induced anxiety",
+      "Connect with politically similar people ('bonding ties') who share your values—research shows this improves physical and mental health",
+      "Form or join local civic groups that explicitly incorporate wellness and mutual support",
+      "Organize community events that combine activism with joy: art builds, community meals, cultural celebrations",
+      "When worried, resist the instinct to isolate—reach out and connect with your community",
+      "Create accountability partnerships where people check in on each other's well-being and political engagement",
     ],
   },
   {
     icon: Heart,
-    title: "Diversify Your Activism",
-    description: "Multiple paths to political engagement",
+    title: "Cultivate Positive Political Emotions",
+    description: "Use inspiration and compassion to sustain action",
     recommendations: [
-      "Balance online activism with tangible, local actions that provide concrete feedback",
-      "Rotate between different types of engagement (volunteering, donation, education, advocacy)",
-      "Pursue 'joyful activism' that incorporates creativity, celebration, and connection",
-      "Recognize that rest itself can be a form of resistance and preparation",
+      "Focus on admiration for people doing good work, not just outrage at injustice",
+      "Seek out stories of inspiration, compassion, gratitude, and hope in political spaces",
+      "Celebrate progress and small wins within your communities and movements",
+      "Study historical movements to gain perspective and see patterns of long-term change",
+      "Share success stories and positive impacts—these sustain motivation with less cost to well-being",
+    ],
+  },
+  {
+    icon: Shield,
+    title: "Balance Engagement Strategies",
+    description: "Diversify how you participate politically",
+    recommendations: [
+      "Balance online activism with tangible, local actions that provide concrete feedback and sense of accomplishment",
+      "Rotate between different types of engagement: volunteering, donating, educating, advocating, organizing",
+      "Practice the 'one meaningful action per day' rule rather than attempting everything at once",
+      "Engage in neighborhood-focused activism—research shows this builds higher personal mastery than volunteering alone",
+      "Pursue 'joyful activism' that incorporates creativity, celebration, and community connection",
+    ],
+  },
+  {
+    icon: Brain,
+    title: "Develop Political Consciousness Through Learning",
+    description: "Build critical understanding through participatory education",
+    recommendations: [
+      "Engage in popular education methods: action-reflection-action cycles that help analyze problems and pursue solutions",
+      "Share personal stories and analyze life histories to build bonds and develop critical thinking",
+      "Map collective resources and use participatory research to understand community strengths",
+      "Move beyond focusing on individual political personalities to analyze systems and power structures",
+      "Join study groups that examine the roots of social issues through an interdisciplinary lens",
     ],
   },
   {
     icon: Sparkles,
-    title: "Cultivate Hope & Connection",
-    description: "Maintaining motivation without burnout",
+    title: "Practice Collective Care",
+    description: "Build community resilience through mutual support",
     recommendations: [
-      "Celebrate small wins and progress, not just focus on what's wrong",
-      "Connect with diverse groups doing positive work in your areas of concern",
-      "Study historical movements to gain perspective on long-term change",
-      "Share stories of impact and success within activist communities",
+      "Establish shared resources like childcare swaps, meal trains, or transportation networks for activists",
+      "Create spaces where talking about political wellness and mental health is normalized",
+      "Organize wellness practices into organizing work: opening meetings with grounding, building in breaks",
+      "Develop mutual aid networks that support both immediate needs and long-term sustainability",
+      "Remember that caring for ourselves and each other is not turning away from justice work—it's essential to it",
     ],
   },
 ];
@@ -79,10 +96,7 @@ const Solutions = () => {
         <ScrollReveal delay={100}>
           <Card className="scrapbook-card mb-12 bg-secondary/5">
             <p className="text-lg text-foreground leading-relaxed">
-              Our recommendations are built on the principle that <strong>sustainable political engagement requires 
-              intentional practices</strong> that honor both civic responsibility and personal wellness. These solutions 
-              are not one-size-fits-all but rather a toolkit from which individuals and communities can draw based on 
-              their unique needs and circumstances.
+Our recommendations are based on the idea that staying involved in political issues should also support your personal well-being. There’s no single solution that works for everyone. Instead, we offer a set of helpful options that people and communities can choose from depending on what they need.
             </p>
           </Card>
         </ScrollReveal>

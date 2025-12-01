@@ -175,11 +175,11 @@ const Profiles = () => {
         <ScrollReveal delay={300}>
           <div className="mt-16 scrapbook-card bg-primary/5 text-center">
             <h2 className="font-handwritten text-3xl font-bold mb-4 text-primary">
-              Our Collective Approach
             </h2>
             <p className="text-lg text-foreground leading-relaxed max-w-3xl mx-auto">
-              We each bring unique strengths and perspectives, but we are united by a shared commitment to balanced collaboration and personal well-being.
+              we hope you enjoyed getting to know our team! remember, taking care of yourself is just as important as staying informed and engaged. let's continue to support each other in both our personal well-being and our collective political consciousness.
             </p>
+          
           </div>
         </ScrollReveal>
       </div>
