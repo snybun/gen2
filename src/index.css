@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Scrapbook color palette - warm earth tones */
+    --background: 36 33% 97%;
+    --foreground: 24 24% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 24 24% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 24% 15%;
+
+    --primary: 14 65% 55%;
+    --primary-foreground: 36 33% 97%;
+
+    --secondary: 142 25% 65%;
+    --secondary-foreground: 24 24% 15%;
+
+    --muted: 36 20% 90%;
+    --muted-foreground: 24 15% 45%;
+
+    --accent: 45 80% 70%;
+    --accent-foreground: 24 24% 15%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 36 33% 97%;
+
+    --border: 36 20% 85%;
+    --input: 36 20% 85%;
+    --ring: 14 65% 55%;
+
+    --radius: 0.75rem;
+    
+    /* Custom scrapbook tokens */
+    --scrapbook-paper: 42 40% 96%;
+    --scrapbook-tape: 45 15% 85%;
+    --scrapbook-shadow: 24 24% 15%;
+    
+    /* Gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(14 65% 55%) 0%, hsl(28 75% 60%) 100%);
+    --gradient-calm: linear-gradient(135deg, hsl(142 25% 65%) 0%, hsl(158 30% 70%) 100%);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Typography */
+    --font-handwritten: 'Caveat', cursive;
+    --font-body: 'Inter', sans-serif;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 24 24% 12%;
+    --foreground: 36 33% 97%;
+
+    --card: 24 24% 15%;
+    --card-foreground: 36 33% 97%;
+
+    --popover: 24 24% 15%;
+    --popover-foreground: 36 33% 97%;
+
+    --primary: 14 65% 55%;
+    --primary-foreground: 36 33% 97%;
+
+    --secondary: 142 25% 35%;
+    --secondary-foreground: 36 33% 97%;
+
+    --muted: 24 15% 20%;
+    --muted-foreground: 36 20% 65%;
+
+    --accent: 45 60% 50%;
+    --accent-foreground: 36 33% 97%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 36 33% 97%;
+
+    --border: 24 15% 25%;
+    --input: 24 15% 25%;
+    --ring: 14 65% 55%;
+    --sidebar-background: 24 24% 10%;
+    --sidebar-foreground: 36 33% 90%;
+    --sidebar-primary: 14 65% 55%;
+    --sidebar-primary-foreground: 36 33% 97%;
+    --sidebar-accent: 24 20% 18%;
+    --sidebar-accent-foreground: 36 33% 90%;
+    --sidebar-border: 24 15% 20%;
+    --sidebar-ring: 14 65% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-body;
+  }
+}
+
+@layer utilities {
+  .font-handwritten {
+    font-family: var(--font-handwritten);
+  }
+  
+  .font-body {
+    font-family: var(--font-body);
+  }
+  
+  .scrapbook-card {
+    @apply bg-card rounded-lg shadow-md border border-border p-6;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .scrapbook-polaroid {
+    @apply bg-white p-3 pb-12 shadow-lg rotate-1 hover:rotate-0 transition-transform duration-300;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
